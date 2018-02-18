@@ -18,23 +18,28 @@
   </head>
 
   <body>
-
-    <%= render 'shared/blog_nav' %>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+    <%= render 'shared/application_nav' %>
 
     <%= render 'shared/blog_masthead' %>
 
     <div class="container">
 
-      <div class="row">
+      <div class="row">    
 
         <%= yield %>
 
         <%= render 'shared/blog_sidebar' %>
+
       </div>
 
-        <%= render 'shared/blog_footer' %>
-
-        <%= alerts %>
+    </div>
+    
+      <%= render 'shared/blog_footer' %>
+        </div>
+      </div>
     </div>
   </body>
 </html>

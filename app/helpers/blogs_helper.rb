@@ -5,7 +5,7 @@ module BlogsHelper
 
   class CodeRayify < Redcarpet::Render::HTML
     def block_code(code, language)
-      CodeRay.scan(code, language).div
+      CodeRay.scan(code, language || :text).div
     end
   end
 
@@ -24,6 +24,6 @@ module BlogsHelper
   end
 
   def blog_status_color blog
-  	'color: red;' if blog.draft?
+    'color: red;' if blog.draft?
   end
 end
