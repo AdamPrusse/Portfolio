@@ -22,23 +22,5 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
-    <script>
-
-    $(document).ready(function () {
-        function CloseNav() {
-            $("navbar-dark").stop().css({ 'height': '1px' }).removeClass('in').addClass("collapse");
-            $(".navbar-toggle").stop().removeClass('collapsed');
-        }
-
-        $('html').click(function (event) {
-            var clickover = $(event.target);
-            var _opened = $("navbar-dark").hasClass("navbar-dark in");
-            if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-                CloseNav();
-            }
-
-        });
-    });
-  </script>
 
 </div>
