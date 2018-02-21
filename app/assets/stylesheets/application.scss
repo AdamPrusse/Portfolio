@@ -1,31 +1,21 @@
 @import "bootstrap";
 @import "gritter";
 
-/*
- * Globals
- */
-
-/* Links */
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
 
-/* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: invert;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  text-color: white;
+  background-color: transparent;
+  border: .1rem solid #fff;
 }
-
-
-/*
- * Base structure
- */
 
 html,
 body {
@@ -69,11 +59,6 @@ h6, .h6 {
 .inner {
   padding: 2rem;
 }
-
-
-/*
- * Header
- */
 
 .masthead {
   margin-bottom: 2rem;
@@ -127,11 +112,6 @@ h6, .h6 {
   }
 }
 
-
-/*
- * Cover
- */
-
 .cover {
   padding: 0 1.5rem;
 }
@@ -140,19 +120,9 @@ h6, .h6 {
   font-weight: bold;
 }
 
-
-/*
- * Footer
- */
-
 .mastfoot {
   color: rgba(255,255,255,.5);
 }
-
-
-/*
- * Affix and center
- */
 
 @media (min-width: 40em) {
   /* Pull out the header and footer */
@@ -236,7 +206,8 @@ h6, .h6 {
 }
 
 .tech-news > .card {
-  padding: 30px;
+  padding: 20px;
+  margin: 5px;
 }
 
 .tech-news a {
@@ -263,6 +234,10 @@ h6, .h6 {
 .card-block {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.card {
+  background-color: rgba(255,255,255,.3);
+  border: .2rem solid #fff;
 }
 
 .skill{

@@ -1,9 +1,14 @@
 <div class="masthead clearfix">
-  <div class="inner">
-    <h4><a href="/" class="masthead-brand">Adam Prusse Development</a></h4>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <h4><a href="/" class="masthead-brand">Adam Prusse Development</a></h4>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
     <nav class="nav nav-masthead app-nav">
       <%= nav_helper 'nav-link', 'span' %>
       <%= login_helper 'nav-link' %>
     </nav>
   </div>
+</nav>
 </div>
