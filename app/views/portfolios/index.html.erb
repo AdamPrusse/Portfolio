@@ -2,7 +2,7 @@
   <div class="container">
   	<%= source_helper("alert alert-warning") %>
 
-  	<%= link_to "Create a new Portfolio Item", new_portfolio_path, class: "btn btn-primary" if logged_in?(:site_admin) %>
+  	<%= link_to "Create a new Portfolio Item", new_portfolio_path, class: "btn btn-outline-info" if logged_in?(:site_admin) %>
   	<hr>
   	
     <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
