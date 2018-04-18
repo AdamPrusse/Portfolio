@@ -260,3 +260,8 @@ h6, .h6 {
   background-color: #white !important;
   color: white !important;
 }
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(230,230,230,.8);
+}
